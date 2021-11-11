@@ -1,7 +1,7 @@
 # Password Management
 
-An administrator may change the password directly in
-`/etc/caddy/auth/local/users.json` file.
+An administrator may change the password directly in the file called
+`/etc/caddy/auth/local/users.json`.
 
 First, download `bcrypt-cli`:
 
@@ -16,4 +16,4 @@ $ echo -n "password123" | bcrypt-cli -c 10
 $2a$10$OVnOaHDkcOXfbUZPFh5qt.yJqUt6pl9uJaqEMxxM.vS5fY/cZNmsq
 ```
 
-Finally, replace the newly generated password is user database file.
+Finally, replace the newly generated password in the user database file.
